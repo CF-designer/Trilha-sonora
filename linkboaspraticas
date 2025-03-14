@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba Boas Práticas</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        position: absolute;
+    }
+    .link:hover {
+        background-color: #45a049;
+    }
+    img {
+    width: 300;
+    height: 250px;  
+    }
+</style>
+</head>
+<body>
+  <center><p><img src="imgBoasPraticas.jpg" alt="Boas Práticas"></p></center><span>Descrição da imagem:fundo azul claro com letras violetas. As 10 boas práticas Html5 1. Usar tags semânticas; 2. Escrever código limpo e organizado; 3. Comentários; 4. Acessibilidade; 5. Manter a compatibilidade com vários navegadores; 6. Links e caminhos relativos; 7. Minimizar o uso de inline CSS e JavaScript; 8. Validação HTML; 9. SEO-friend,
+    10. Desempenho.</span> 
+</body>
+</html>
