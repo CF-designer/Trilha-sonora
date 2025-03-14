@@ -23,7 +23,7 @@ img {
     width: 300;
     height: 250px;
 }
-header {
+header h1 {
     background-color: #6200ea;
     color: white;
     text-align: center;
