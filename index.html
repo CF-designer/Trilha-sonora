@@ -4,7 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha sonora:A Descoberta</title>
-    <link rel="stylesheet" href="styletrilhasonora.css">
+    <link rel="stylesheet" href="css/styletrilhasonora.css">
+    <style>
+#{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1,6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    }
+.contato h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contato label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+} 
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contato button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+} 
+.contato button:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}  
+    </style>
 </head>
 <body>
     <header>
@@ -16,9 +71,9 @@
             <h2>Tutorial Html5</h2>
             <p>Tem como objetivo principal, mostrar passo a passo da estrutura inicial do html5 para iniciantes do programa desenvolvedor web. Bora lá?</p>
             <p>Passo 1 - Conhecer as Boas Práticas do html5:</p>
-            <p><img src="imgBoasPraticas.jpg" alt="Boas Práticas"></p><span>Descrição da imagem: 1. Usar tags semânticas; 2. Escrever código limpo e organizado; 3. Comentários; 4. Acessibilidade; 5. Manter a compatibilidade com vários navegadores; 6. Links e caminhos relativos; 7. Minimizar o uso de inline CSS e JavaScript; 8. Validação HTML; 9. SEO-friend,
-                10. Desempenho.</span>
-        </article>
+            <a href="#article" class="link">Boas Práticas</a>
+            <a href="linkboaspraticas.html" target="_blank" class="link">Boas Práticas</a>
+            <article id="Boas Práticas"></article><br><br>  
         <article class="postagem">
             <p>Agora que já conhecemos as Boas Práticas Html5, Bora colocar a mão na massa... ops! no teclado.</p>
             <p>Passo 2 - Estrutura Html5:</p>
@@ -34,34 +89,23 @@
     <li>Delimitado pelas tags &lt;BODY> e &lt;/BODY&gt;. </</li>
     <li>Contém conteúdo da página, como textos, imagens, formulários, vídeos, mapas, entre outros.</li>
     <p>As tags HTML, são formadas por uma tag de abertura, o conteúdo e uma tag de fechamento.A tag de abertura começa com o símbolo <> e a tag de fechamento termina com o símbolo &lt;/&gt;</p>
-    <hr><p>Vejamos o exemplo na prática.</p>
-    <p>Imagem ilustrativa da <b>Estrutura Básica Html5</b></p>
-    <img src="estrutura basica.jpg" 
-    alt="imagem ilustrativa Estrutura Básica Html5">
-    <p>
-    <span>Descrição da imagem : A declaração do tipo de Documento (&lt;!DOCTYPE html>), o Cabeçalho (&lt;head&gt;) e o Corpo (&lt;body>), juntamente com a tag (&lt;title>) título,(&lt;h1>) o tema central,finalmente o parágrafo (&lt;p>), sempre observando a tag de abertura (<>) e de fechamento(&lt;/&gt;). Ok?</span>
+    <hr><p>Vejamos o exemplo na prática na aba abaixo:.</p>
+         <a href="#article" class="link">Estrutura Básica</a>
+         <a href="linkestruturabasica.html" target="_blank" class="link">Estrutura Básica</a>
+    <article id="Estrutura Básica"></article><br><br>
         </article>
         <article class="postagem">
         <h2>O que são as TAGS, como identifica-las e como usa-las?</h2>
         <p>TAGS HTML são instruções que informam ao navegador como formatar o texto. Você pode usar tags para definir itálico, quebras de linha, objetos, bullet points e muito mais.
             Essas tags estão presentes no HTML (Hyperyext Markup Language) de todas as páginas da internet. Ao todo são mais de 100 tags que podem ser utilizadas!!</p>
-            <p>Vejamos alguns exemplos na imagem abaixo:</p>
-            <p> <img src="imagtags.jpg" alt="TAGS mais comuns"></p>
-            <span>Descrição da imagem: <li>
-                &lt;p>&lt;/p&gt; – Principal tag de texto, compõe um parágrafo;</li>
-                <li>&lt;span>&lt;/span&gt; – Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container; </li>
-            <li> &lt;pre>&lt;/pre&gt; – Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos; </li>
-            <li>  &lt;b>&lt;/b&gt;  – Transforma o conteúdo em negrito; </li>
-            <li> &lt;i>&lt;/i&gt;– Transforma o conteúdo em itálico; </li>
-            <li>&lt;br/&gt; – Essa tag não necessita de fechamento, ela executa a função de quebra de linha. </li>
-            <li> &lt;hr/&gt;– Essa tag não necessita de fechamento, ela forma uma linha horizontal.</li>      
-            </span>
+            <p>Vejamos alguns exemplos na aba abaixo:</p>
+            <a href="#article" class="link">Tags</a>
+            <a href="linktags.html" target="_blank" class="link">Tags</a>
+       <article id="Tags"></article><br><br>
         </article>
         <article class="postagem">
             <h3>Bom, fico por aqui, até o próximo tutorial Descoberta HTML5! </h3>
         <P>Bons estudos, bora pesquisar e criar um site maravilindo e ser feliz huhuhu!</P>
-        </article>
-        <article>
     <h4>Ah! caso queira mais informações, esclarecer dúvidas ou sugestionar, é só preencher o formulário abaixo e clicar em enviar, e assim que possível, responderemos. Até logo e agradecemos o contato.</h4>
      </article>
     </section>
@@ -73,34 +117,30 @@
         <li><a href="https://www.w3schools.com/">w3schools</a></li>
         <li><a href="https://skillsbuild.org/?lnk=next">IBMSKILL</a></li>
         </ul>
-        <center><h2>Acesse a aba abaixo do site Corretor de imóveis, exemplo do passo a passo da estrutura básica inicial Html5</h2></center>
+        <h3>A aba abaixo Corretor de imóveis é um exemplo do passo a passo da estrutura básica inicial Html5.Que tal dá uma conferida?!</h3>
         <a href="#section1" class="link">Corretor-de-imoveis</a>
         <a href="https://cf-designer.github.io/Corretor-de-imoveis/" target="_blank" class="link">Corretor de Imóveis</a>
         <section id="section1"></section>
     </aside><br><br>
-    <h4>Formulário de contato</h4>
-    <form action="/submit" method="post">
-        <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome"name="nome" required>        
-     </div>
-        <div>
-        <label for="celular">Celular com DDD:</label>
-        <input type="text" id="celular" name="celular" required>        
-     </div>
-        <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>        
-        </div>       
-     <div>
-        <label for="mensagen">Mensagem:</label>
-        <textarea id="mensagem"name=mensagem rows="4" required></textarea>        
-        </div>               
-     <div>
-        <button type="submit">Enviar</button>
+    <section class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#">
+               <label for=”nome”>Nome:</label>
+               <input type=”text”  id=”nome” name=”nome” required>
+               <label for=”email”>Email:</label>
+               <input type=”email”  id=”email” name=”email” required>
+               <label for=”mensagem”>Mensagem:</label>
+               <textarea id=”mensagem” name=”mensagem” required></textarea>
+               <button type="submit">Enviar</button>
+            </form>
         </div>
-     </form>
-     <center>₢ Copyrigth 2025 Direitos autorais reservados para Aparecida, Cledson e Paulo.</center>
-    <a href="#" style="position: fixed; bottom: 20px; right:20px;width: 40px; height: 40px; background-color: #007BFF;color: white; text-align: center; line-height: 40px;font-size: 20px; border-radius: 50%; text-decoration: none;">⬆</a>
-</body>
+    </section>
+    <footer>
+        <div class="container">
+            <center><p>₢Copyrigth 2025 Direitos autorais reservados para Aparecida, Cledson e Paulo.</p></center>
+        </div>
+    </footer>
+     <a href="#" style="position: fixed; bottom: 20px; right: 20px; width: 40px; height: 40px; background-color: #007BFF; color: white; text-align: center; line-height: 40px; font-size: 20px; border-radius: 50%; text-decoration: none;">⬆</a>
+    </body>
 </html>
