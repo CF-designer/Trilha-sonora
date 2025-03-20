@@ -1,52 +1,55 @@
-/* Estilização geral */
+/* Estilização global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
+/* Container principal */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Header */
+/* Header com imagem */
 header {
     background: url('https://media.licdn.com/dms/image/v2/D4D12AQHb-RV8x24QOQ/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1711492066607?e=1747872000&v=beta&t=LLn-hG0YC9U0N09eEveSWGIHIxtWPxGNzAJFLBhvRzo') no-repeat center center/cover;
-    height: 200px;
+    height: 300px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 
 header h1 {
-    font-size: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 2.8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #000;
 }
 
-/* Seção de postagens */
+/* Postagens */
 #postagens {
-    padding: 20px 0;
+    margin: 20px 0;
 }
 
 .postagem {
     background: white;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -58,68 +61,103 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Links */
-a {
-    color: #007bff;
+.postagem a.link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #6200ea;
+    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.postagem a.link:hover {
+    background-color: #4500a1;
 }
 
 /* Aside */
 aside {
     background: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Formulário de contato */
+/* Formulário de Contato */
 .contato h2 {
     text-align: center;
     color: #6200ea;
+    margin-bottom: 20px;
 }
 
 .contato form {
-    background: #fff;
+    background: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contato label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .contato input, .contato textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .contato button {
-    display: block;
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px;
+    background-color: #6200ea;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contato button:hover {
-    background-color: #0056b3;
+    background-color: #4500a1;
 }
 
-/* Rodapé */
+/* Footer */
 footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Botão flutuante */
+a[href="#"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #6200ea;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
-    border-radius: 5px 5px 0 0;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+a[href="#"]:hover {
+    background-color: #4500a1;
 }
