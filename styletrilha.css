@@ -1,3 +1,6 @@
+body {
+    background-color: yellow;
+}
 /* Estilização global */
 * {
     margin: 0;
